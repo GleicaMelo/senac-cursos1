@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cursos from "./pages/cursos";
-import Cadastro from "./pages/Cadastro";
+import Cadastro from "./pages/cadastro";
 import Navbar from "./components/Navbar";
 
 export default function App() {
