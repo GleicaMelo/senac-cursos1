@@ -1,0 +1,62 @@
+{
+  "cursos": [
+    {
+      "id": 1,
+      "titulo": "Estetica e Cosmetica",
+      "categoria": "Programação",
+      "inicio": "2025-11-10",
+      "fim": "2026-01-20",
+      "vagas": 20,
+      "vagas_ocupadas": 5,
+      "horas": 40,
+      "preco": 199.90,
+      "imagem": "/src/assets/web.jpg",
+      "descricao": "Aprenda HTML, CSS, JavaScript, React e Node.js do zero ao avançado."
+    },
+    {
+      "id": 2,
+      "titulo": "Tecino em Informatica para Internet",
+      "categoria": "Design",
+      "inicio": "2025-11-25",
+      "fim": "2026-02-10",
+      "vagas": 15,
+      "vagas_ocupadas": 15,
+      "horas": 30,
+      "preco": 179.90,
+      "imagem": "/src/assets/design.jpg",
+      "descricao": "Princípios de UX e ferramentas: Figma e Adobe XD."
+    },
+    {
+      "id": 3,
+      "titulo": "Logistica",
+      "categoria": "Marketing",
+      "inicio": "2025-12-05",
+      "fim": "2026-03-01",
+      "vagas": 25,
+      "vagas_ocupadas": 2,
+      "horas": 35,
+      "preco": 189.90,
+      "imagem": "/src/assets/images.png",
+      "descricao": "SEO, Google Ads, e-mail marketing e estratégias de conversão."
+    },
+    {
+      "id": 4,
+      "titulo": "Maquiagem Profissional",
+      "categoria": "Marketing",
+      "inicio": "2025-12-05",
+      "fim": "2026-03-01",
+      "vagas": 25,
+      "vagas_ocupadas": 2,
+      "horas": 35,
+      "preco": 189.90,
+      "imagem": "/src/assets/marketing.jpg",
+      "descricao": "SEO, Google Ads, e-mail marketing e estratégias de conversão."
+    },
+    {
+        "id": 5,
+        "titulo": ""
+        
+    }
+    
+  ]
+}
