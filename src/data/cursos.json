@@ -10,7 +10,7 @@
       "vagas_ocupadas": 5,
       "horas": 40,
       "preco": 199.90,
-      "imagem": "/src/assets/web.jpg",
+      "imagem": "/src/assets/estetica.png",
       "descricao": "Aprenda HTML, CSS, JavaScript, React e Node.js do zero ao avançado."
     },
     {
@@ -20,10 +20,10 @@
       "inicio": "2025-11-25",
       "fim": "2026-02-10",
       "vagas": 15,
-      "vagas_ocupadas": 15,
+      "vagas_ocupadas": 14,
       "horas": 30,
       "preco": 179.90,
-      "imagem": "/src/assets/design.jpg",
+      "imagem": "/src/assets/t.i.png",
       "descricao": "Princípios de UX e ferramentas: Figma e Adobe XD."
     },
     {
@@ -36,7 +36,7 @@
       "vagas_ocupadas": 2,
       "horas": 35,
       "preco": 189.90,
-      "imagem": "/src/assets/images.png",
+      "imagem": "/src/assets/logistica.png",
       "descricao": "SEO, Google Ads, e-mail marketing e estratégias de conversão."
     },
     {
@@ -49,14 +49,37 @@
       "vagas_ocupadas": 2,
       "horas": 35,
       "preco": 189.90,
-      "imagem": "/src/assets/marketing.jpg",
+      "imagem": "/src/assets/maquiagem.png",
       "descricao": "SEO, Google Ads, e-mail marketing e estratégias de conversão."
     },
     {
-        "id": 5,
-        "titulo": ""
-        
+      "id": 5,
+      "titulo": "Costureiro",
+      "categoria": "Moda",
+      "inicio": "2025-12-05",
+      "fim": "2026-03-01",
+      "vagas": 25,
+      "vagas_ocupadas": 2,
+      "horas": 35,
+      "preco": 189.90,
+      "imagem": "/src/assets/costureiro.png",
+      "descricao": "SEO, Google Ads, e-mail marketing e estratégias de conversão."
+    },
+    {
+      "id": 6,
+      "titulo": "Atendente de Farmacia",
+      "categoria": "Saúde",
+      "inicio": "2025-12-05",
+      "fim": "2026-03-01",
+      "vagas": 25,
+      "vagas_ocupadas": 2,
+      "horas": 35,
+      "preco": 189.90,
+      "imagem": "/src/assets/farmacia.png",
+      "descricao": "SEO, Google Ads, e-mail marketing e estratégias de conversão."
     }
+        
+  
     
   ]
 }
