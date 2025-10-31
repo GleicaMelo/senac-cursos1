@@ -22,9 +22,9 @@ export default function Cursos() {
 
   // 🔽 Extrai categorias únicas
   const categoriasUnicas = ["Todos", ...new Set(cursos.map((c) => c.categoria))];
-
+// background da Gleica
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 p-6 md:p-10">
+    <div className="min-h-screen bg-blue-100 p-6 md:p-10">
       {/* 🧭 Cabeçalho */}
       <header className="text-center mb-10">
         <h1 className="text-3xl md:text-4xl font-extrabold text-blue-700 drop-shadow-sm">
