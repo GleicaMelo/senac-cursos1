@@ -3,7 +3,7 @@
     {
       "id": 1,
       "titulo": "Estetica e Cosmetica",
-      "categoria": "Programação",
+      "categoria": "Saúde",
       "inicio": "2025-11-10",
       "fim": "2026-01-20",
       "vagas": 20,
@@ -15,8 +15,8 @@
     },
     {
       "id": 2,
-      "titulo": "Tecino em Informatica para Internet",
-      "categoria": "Design",
+      "titulo": "Tecnico em Informatica para Internet",
+      "categoria": "Programação",
       "inicio": "2025-11-25",
       "fim": "2026-02-10",
       "vagas": 15,
@@ -42,7 +42,7 @@
     {
       "id": 4,
       "titulo": "Maquiagem Profissional",
-      "categoria": "Marketing",
+      "categoria": "Moda",
       "inicio": "2025-12-05",
       "fim": "2026-03-01",
       "vagas": 25,
