@@ -12,14 +12,12 @@ export default function Cursos() {
       .then(data => setCursos(data));
   }, []);
 
-  // 🔍 Filtra por busca e categoria
   const filtrados = cursos.filter(curso => {
     const nomeMatch = curso.titulo.toLowerCase().includes(busca.toLowerCase());
     const catMatch = categoria === "Todos" || curso.categoria === categoria;
     return nomeMatch && catMatch;
   });
 
-  // 🔽 Extrai categorias únicas
   const categoriasUnicas = ["Todos", ...new Set(cursos.map(c => c.categoria))];
 
   return (
@@ -36,7 +34,6 @@ export default function Cursos() {
           className="bg-white border p-2 rounded-md w-full md:w-1/2"
         />
 
-        {/* 🧭 Seleção de categoria */}
         <select
           value={categoria}
           onChange={e => setCategoria(e.target.value)}
@@ -47,18 +44,10 @@ export default function Cursos() {
           ))}
         </select>
 
-        {/* 🔐 Botão de Login */}
-        <button
-          onClick={() => alert("Aqui entraria a tela de login.")}
-          className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
-        >
-          Login
-        </button>
       </div>
 
-      {/* 🧱 Grade de cursos */}
       {filtrados.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {filtrados.map(curso => (
             <CursoCard key={curso.id} curso={curso} />
           ))}

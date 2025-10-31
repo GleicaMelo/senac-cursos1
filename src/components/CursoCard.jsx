@@ -4,7 +4,7 @@ export default function CursoCard({ curso }) {
   const disponivel = curso.vagas_ocupadas < curso.vagas;
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition p-4">
-      <img src={curso.imagem} alt={curso.titulo} className="rounded-xl h-35" />
+      <img src={curso.imagem} alt={curso.titulo} className="rounded-xl h-80" />
       <h2 className="text-lg font-semibold mt-2">{curso.titulo}</h2>
       <p className="text-gray-600 text-sm">{curso.categoria}</p>
       <p className="text-gray-700 mt-2 text-sm">{curso.descricao}</p>
