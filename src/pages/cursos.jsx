@@ -36,7 +36,7 @@ export default function Cursos() {
           </p>
         </header>
 
-        {/* 🔍 Barra de busca e filtro */}
+        {/* Barra de busca e filtro */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-10">
           <input
             type="text"
@@ -73,9 +73,9 @@ export default function Cursos() {
         )}
       </main>
 
-      {/* 🌈 Rodapé moderno */}
-      <footer className="bg-gradient-to-t from-orange-100 to-blue-100 w-full py-10 text-center shadow-inner border-t border-blue-400">
-        <h3 className="text-2xl font-bold text-blue-700 mb-5">Senac</h3>
+      {/*nosso rodapé moderno */}
+      <footer className="bg-white w-full py-10 text-center shadow-inner border-t border-blue-400">
+        <h3 className=" text-3xl font-bold text-blue-700 mb-5">Senac</h3>
 
         {/* Ícones SVG de redes sociais */}
         <div className="flex justify-center gap-6 mb-6">
@@ -90,7 +90,7 @@ export default function Cursos() {
             </svg>
           </a>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/cursossenacacailandia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-700 hover:text-pink-500 transition"
@@ -100,7 +100,7 @@ export default function Cursos() {
             </svg>
           </a>
           <a
-            href="https://wa.me/5599999999999"
+            href="https://wa.me/559992120154"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-700 hover:text-green-600 transition"
@@ -121,15 +121,15 @@ export default function Cursos() {
 
         {/* Informações */}
         <p className="text-sm text-gray-700">
-          Rua das Flores, 123 — Açailândia/MA
+          Rua não sei oq lá, 123 — Açailândia/MA
         </p>
         <p className="text-sm text-gray-700 mb-4">
-          Telefone: (99) 99999-9999 | E-mail: contato@senac.com
+          Telefone: (99) 4002-8922 | E-mail: contato@senac.com
         </p>
 
         {/* Direitos autorais */}
         <p className="text-xs text-gray-500">
-          © {new Date().getFullYear()} Senac Cursos — Todos os direitos
+          © {new Date().getFullYear()} Filype Galvão e Gleica Melo — Todos os direitos
           reservados.
         </p>
       </footer>
