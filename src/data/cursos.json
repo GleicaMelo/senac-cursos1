@@ -11,11 +11,11 @@
       "horas": 40,
       "preco": 199.90,
       "imagem": "/src/assets/estetica.png",
-      "descricao": "Aprenda HTML, CSS, JavaScript, React e Node.js do zero ao avançado."
+      "descricao": "Desenvolva habilidades em cuidados com a pele, maquiagem, depilação e estética facial e corporal. Aprenda técnicas modernas e seguras para atuar em clínicas, spas e salões de beleza, com foco no bem-estar e na autoestima dos clientes."
     },
     {
       "id": 2,
-      "titulo": "Tecnico em Informatica para Internet",
+      "titulo": "Técnico em Informatica para Internet",
       "categoria": "Programação",
       "inicio": "2025-11-25",
       "fim": "2026-02-10",
@@ -24,7 +24,7 @@
       "horas": 30,
       "preco": 179.90,
       "imagem": "/src/assets/t.i.png",
-      "descricao": "Princípios de UX e ferramentas: Figma e Adobe XD."
+      "descricao": "Domine a criação de sites e sistemas web completos utilizando HTML, CSS, JavaScript, React e Node.js. Aprenda também sobre bancos de dados, hospedagem e boas práticas de programação para se destacar no mercado digital."
     },
     {
       "id": 3,
@@ -37,7 +37,7 @@
       "horas": 35,
       "preco": 189.90,
       "imagem": "/src/assets/logistica.png",
-      "descricao": "SEO, Google Ads, e-mail marketing e estratégias de conversão."
+      "descricao": "Entenda como funciona toda a cadeia de suprimentos — do armazenamento à distribuição. Aprenda a otimizar processos, reduzir custos e melhorar o fluxo de produtos em empresas de diferentes portes e segmentos."
     },
     {
       "id": 4,
@@ -50,7 +50,7 @@
       "horas": 35,
       "preco": 189.90,
       "imagem": "/src/assets/maquiagem.png",
-      "descricao": "SEO, Google Ads, e-mail marketing e estratégias de conversão."
+      "descricao": "Aperfeiçoe suas técnicas de maquiagem para diferentes estilos, tipos de pele e ocasiões. Aprenda sobre visagismo, harmonização de cores, preparação da pele e tendências do mercado da beleza para atuar como maquiador(a) profissional."
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "horas": 35,
       "preco": 189.90,
       "imagem": "/src/assets/costureiro.png",
-      "descricao": "SEO, Google Ads, e-mail marketing e estratégias de conversão."
+      "descricao": "Aprenda desde os fundamentos da costura até técnicas avançadas de modelagem e acabamento. Desenvolva peças com qualidade profissional e entenda como trabalhar com diferentes tecidos e máquinas de costura."
     },
     {
       "id": 6,
@@ -76,7 +76,7 @@
       "horas": 35,
       "preco": 189.90,
       "imagem": "/src/assets/farmacia.png",
-      "descricao": "SEO, Google Ads, e-mail marketing e estratégias de conversão."
+      "descricao": "Prepare-se para atuar no atendimento ao público em farmácias e drogarias. Aprenda sobre medicamentos, receituários, ética profissional e boas práticas de armazenamento e controle de estoque de produtos farmacêuticos."
     }
         
   
