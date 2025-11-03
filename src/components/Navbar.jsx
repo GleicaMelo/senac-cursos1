@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 // aqui é onde a gente pode mexer no Navbar
 export default function Navbar() {
   return (
-    <nav className="bg-white py-5 px-10 text-blue-600 p-4 flex items-center justify-between">
+    <nav className="bg-gradient-white-to-t from-orange-100 py-5 px-10 text-blue-600 p-4 flex items-center justify-between">
         <img src="/src/assets/senac-logo.png" alt="senac" className="h-18" />
 
       <div className="flex space-x-4">
