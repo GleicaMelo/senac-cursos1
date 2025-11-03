@@ -13,9 +13,15 @@ export default function CursoCard({ curso }) {
         <p><b>Fim:</b> {curso.fim}</p>
         <p><b>Horas:</b> {curso.horas}h</p>
       </div>
-      <p className={`mt-2 font-semibold ${disponivel ? "text-green-600" : "text-red-500"}`}>
-        {disponivel ? "Disponível" : "Vagas Esgotadas"}
-      </p>
+      <p className="mt-2 font-semibold">
+  <span
+    className={`px-3 py-1 rounded-full ${
+      disponivel ? "bg-green-200 text-green-800" : "bg-red-200 text-red-800"
+    } inline-block`}
+  >
+    {disponivel ? "Disponível" : "Vagas Esgotadas"}
+  </span>
+</p>
       <p className="text-blue-700 font-bold mt-2">R$ {curso.preco}</p>
 
       <Link to={`/cadastro/${curso.id}`}>
