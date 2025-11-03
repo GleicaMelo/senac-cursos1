@@ -22,58 +22,113 @@ export default function Cursos() {
 
   // 🔽 Extrai categorias únicas
   const categoriasUnicas = ["Todos", ...new Set(cursos.map((c) => c.categoria))];
-// background da Gleica
+
   return (
-    <div className="min-h-screen bg-blue-100 p-6 md:p-10">
-      {/* 🧭 Cabeçalho */}
-      <header className="text-center mb-10">
-        <h1 className="text-3xl md:text-4xl font-extrabold text-blue-700 drop-shadow-sm">
-          Cursos 
-        </h1>
-        <p className="text-gray-600 mt-2">
-          Explore nossos cursos e invista no seu futuro profissional
-        </p>
-      </header>
+    <div className="min-h-screen bg-blue-100 flex flex-col justify-between">
+      <main className="flex-grow p-6 md:p-10">
+        {/* 🧭 Cabeçalho */}
+        <header className="text-center mb-10">
+          <h1 className="text-3xl md:text-4xl font-extrabold text-blue-700 drop-shadow-sm">
+            Cursos
+          </h1>
+          <p className="text-gray-600 mt-2">
+            Explore nossos cursos e invista no seu futuro profissional
+          </p>
+        </header>
 
-      {/* 🔍 Barra de busca e filtro */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-10">
-        <input
-          type="text"
-          placeholder="Pesquisar curso..."
-          value={busca}
-          onChange={(e) => setBusca(e.target.value)}
-          className="bg-white border border-gray-300 p-3 rounded-xl w-full md:w-1/2 shadow-sm focus:ring-2 focus:ring-blue-500 outline-none transition"
-        />
+        {/* 🔍 Barra de busca e filtro */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-10">
+          <input
+            type="text"
+            placeholder="Pesquisar curso..."
+            value={busca}
+            onChange={(e) => setBusca(e.target.value)}
+            className="bg-white border border-gray-300 p-3 rounded-xl w-full md:w-1/2 shadow-sm focus:ring-2 focus:ring-blue-500 outline-none transition"
+          />
 
-        <select
-          value={categoria}
-          onChange={(e) => setCategoria(e.target.value)}
-          className="bg-white border border-gray-300 p-3 rounded-xl shadow-sm focus:ring-2 focus:ring-blue-500 outline-none transition w-full md:w-1/4"
-        >
-          {categoriasUnicas.map((cat) => (
-            <option key={cat} value={cat}>
-              {cat}
-            </option>
-          ))}
-        </select>
-      </div>
-
-      {/* 🧱 Grade de cursos */}
-      {filtrados.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filtrados.map((curso) => (
-            <CursoCard key={curso.id} curso={curso} />
-          ))}
+          <select
+            value={categoria}
+            onChange={(e) => setCategoria(e.target.value)}
+            className="bg-white border border-gray-300 p-3 rounded-xl shadow-sm focus:ring-2 focus:ring-blue-500 outline-none transition w-full md:w-1/4"
+          >
+            {categoriasUnicas.map((cat) => (
+              <option key={cat} value={cat}>
+                {cat}
+              </option>
+            ))}
+          </select>
         </div>
-      ) : (
-        <p className="text-center text-gray-600 mt-16 text-lg">
-          Nenhum curso encontrado 😕
-        </p>
-      )}
 
-      {/* 📞 Rodapé */}
-      <footer className="mt-20 text-center text-sm text-gray-500">
-        <p>
+        {/* 🧱 Grade de cursos */}
+        {filtrados.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {filtrados.map((curso) => (
+              <CursoCard key={curso.id} curso={curso} />
+            ))}
+          </div>
+        ) : (
+          <p className="text-center text-gray-600 mt-16 text-lg">
+            Nenhum curso encontrado 😕
+          </p>
+        )}
+      </main>
+
+      {/* 🌈 Rodapé moderno */}
+      <footer className="bg-gradient-to-t from-orange-100 to-blue-100 w-full py-10 text-center shadow-inner border-t border-blue-400">
+        <h3 className="text-2xl font-bold text-blue-700 mb-5">Senac</h3>
+
+        {/* Ícones SVG de redes sociais */}
+        <div className="flex justify-center gap-6 mb-6">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 hover:text-blue-500 transition"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.12 8.44 9.88v-6.99H8.09v-2.89h2.35V9.41c0-2.33 1.39-3.62 3.52-3.62 1.02 0 2.09.18 2.09.18v2.3h-1.18c-1.17 0-1.53.73-1.53 1.48v1.77h2.6l-.42 2.89h-2.18v6.99C18.34 21.12 22 17 22 12z" />
+            </svg>
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 hover:text-pink-500 transition"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
+              <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 4a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+            </svg>
+          </a>
+          <a
+            href="https://wa.me/5599999999999"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 hover:text-green-600 transition"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
+              <path d="M20.52 3.48A11.92 11.92 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.17 1.6 5.98L0 24l6.24-1.63A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.18-3.48-8.52zM12 22c-1.89 0-3.73-.53-5.32-1.54l-.38-.24-3.7.96.99-3.58-.25-.4A9.93 9.93 0 0 1 2 12c0-5.52 4.48-10 10-10 2.67 0 5.18 1.04 7.07 2.93A9.93 9.93 0 0 1 22 12c0 5.52-4.48 10-10 10z" />
+            </svg>
+          </a>
+          <a
+            href="mailto:contato@senac.com"
+            className="text-blue-700 hover:text-red-500 transition"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
+              <path d="M12 13.065 2.4 6h19.2L12 13.065zM22 8.335V18H2V8.335l10 7.13 10-7.13z" />
+            </svg>
+          </a>
+        </div>
+
+        {/* Informações */}
+        <p className="text-sm text-gray-700">
+          Rua das Flores, 123 — Açailândia/MA
+        </p>
+        <p className="text-sm text-gray-700 mb-4">
+          Telefone: (99) 99999-9999 | E-mail: contato@senac.com
+        </p>
+
+        {/* Direitos autorais */}
+        <p className="text-xs text-gray-500">
           © {new Date().getFullYear()} Senac Cursos — Todos os direitos
           reservados.
         </p>
