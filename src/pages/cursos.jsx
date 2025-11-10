@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import CursoCard from "../components/CursoCard";
 
 export default function Cursos() {
@@ -36,7 +37,7 @@ export default function Cursos() {
           </p>
         </header>
 
-        {/* Barra de busca e filtro */}
+        {/* 🔎 Barra de busca e filtro */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-10">
           <input
             type="text"
@@ -59,7 +60,7 @@ export default function Cursos() {
           </select>
         </div>
 
-        {/* aqui está a nossa Grade de cursos*/}
+        {/* 🧱 Grade de cursos */}
         {filtrados.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filtrados.map((curso) => (
@@ -73,105 +74,151 @@ export default function Cursos() {
         )}
       </main>
 
-    <footer className="bg-white w-full py-10 px-4 text-center shadow-inner border-t border-blue-400">
-  {/* Nome e Ícones centralizados */}
-  <div className="flex flex-col items-center mb-8">
-    <h3 className="text-3xl font-bold text-blue-700 mb-4">Senac</h3>
-  
-  </div>
+      {/* 🦶 Rodapé */}
+      <footer className="bg-white w-full py-10 px-4 text-center shadow-inner border-t border-blue-400">
+        {/* Nome e Ícones centralizados */}
+        <div className="flex flex-col items-center mb-8">
+          <h3 className="text-3xl font-bold text-blue-700 mb-4">Senac</h3>
+        </div>
 
-  {/*Aqui as Seções de conteúdo*/}
-<div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-left">
-  <div>
-    <h4 className="text-lg font-semibold text-blue-700 mb-2">Sobre nós</h4>
-    <ul className="text-gray-700 space-y-1 text-sm leading-relaxed">
-      <li><a href="#" className="hover:text-orange-500 block">Quem somos</a></li>
-      <li><a href="#" className="hover:text-orange-500 block">Onde estamos</a></li>
-      <li><a href="#" className="hover:text-orange-500 block">Privacidade e Proteção de Dados</a></li>
-      <li><a href="#" className="hover:text-orange-500 block">Ouvidoria</a></li>
-    </ul>
-  </div>
+        {/* Seções de conteúdo */}
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-left">
+          {/* Sobre nós */}
+          <div>
+            <h4 className="text-lg font-semibold text-blue-700 mb-2">Sobre nós</h4>
+            <ul className="text-gray-700 space-y-1 text-sm leading-relaxed">
+              <li>
+                <Link to="/QuemSomos" className="hover:text-orange-500 block">
+                  Quem somos
+                </Link>
+              </li>
+              <li>
+                <Link to="/OndeEstamos" className="hover:text-orange-500 block">
+                  Onde estamos
+                </Link>
+              </li>
+              <li>
+                <a href="#" className="hover:text-orange-500 block">
+                  Privacidade e Proteção de Dados
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-orange-500 block">
+                  Ouvidoria
+                </a>
+              </li>
+            </ul>
+          </div>
 
-  <div>
-    <h4 className="text-lg font-semibold text-blue-700 mb-2">Cursos</h4>
-    <ul className="text-gray-700 space-y-1 text-sm leading-relaxed">
-      <li><a href="#" className="hover:text-orange-500 block">Presencial</a></li>
-      <li><a href="#" className="hover:text-orange-500 block">EAD</a></li>
-      <li><a href="#" className="hover:text-orange-500 block">Programa de Gratuidade (PSG)</a></li>
-    </ul>
-  </div>
+          {/* Cursos */}
+          <div>
+            <h4 className="text-lg font-semibold text-blue-700 mb-2">Cursos</h4>
+            <ul className="text-gray-700 space-y-1 text-sm leading-relaxed">
+              <li>
+                <a href="#" className="hover:text-orange-500 block">
+                  Presencial
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-orange-500 block">
+                  EAD
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-orange-500 block">
+                  Programa de Gratuidade (PSG)
+                </a>
+              </li>
+            </ul>
+          </div>
 
-  <div>
-    <h4 className="text-lg font-semibold text-blue-700 mb-2">Serviços</h4>
-    <ul className="text-gray-700 space-y-1 text-sm leading-relaxed">
-      <li><a href="#" className="hover:text-orange-500 block">Restaurante Senac</a></li>
-      <li><a href="#" className="hover:text-orange-500 block">Banco de Oportunidades</a></li>
-      <li><a href="#" className="hover:text-orange-500 block">Biblioteca</a></li>
-      <li><a href="#" className="hover:text-orange-500 block">Licitações</a></li>
-    </ul>
-  
+          {/* Serviços */}
+          <div>
+            <h4 className="text-lg font-semibold text-blue-700 mb-2">Serviços</h4>
+            <ul className="text-gray-700 space-y-1 text-sm leading-relaxed">
+              <li>
+                <a href="#" className="hover:text-orange-500 block">
+                  Restaurante Senac
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-orange-500 block">
+                  Banco de Oportunidades
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-orange-500 block">
+                  Biblioteca
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-orange-500 block">
+                  Licitações
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-    </div>
-  </div>
+        {/* Redes sociais */}
+        <div className="flex justify-center gap-6">
+          {/* Facebook */}
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 hover:text-blue-500 transition"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.12 8.44 9.88v-6.99H8.09v-2.89h2.35V9.41c0-2.33 1.39-3.62 3.52-3.62 1.02 0 2.09.18 2.09.18v2.3h-1.18c-1.17 0-1.53.73-1.53 1.48v1.77h2.6l-.42 2.89h-2.18v6.99C18.34 21.12 22 17 22 12z" />
+            </svg>
+          </a>
 
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/cursossenacacailandia"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 hover:text-pink-500 transition"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
+              <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 4a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+            </svg>
+          </a>
 
- <div className="flex justify-center gap-6">
-      {/* Facebook */}
-      <a
-        href="https://www.facebook.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-700 hover:text-blue-500 transition"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
-          <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.12 8.44 9.88v-6.99H8.09v-2.89h2.35V9.41c0-2.33 1.39-3.62 3.52-3.62 1.02 0 2.09.18 2.09.18v2.3h-1.18c-1.17 0-1.53.73-1.53 1.48v1.77h2.6l-.42 2.89h-2.18v6.99C18.34 21.12 22 17 22 12z" />
-        </svg>
-      </a>
-      {/* Instagram */}
-      <a
-        href="https://www.instagram.com/cursossenacacailandia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-700 hover:text-pink-500 transition"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
-          <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 4a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-        </svg>
-      </a>
-      {/* WhatsApp */}
-      <a
-        href="https://wa.me/559992120154"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-700 hover:text-green-600 transition"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
-          <path d="M20.52 3.48A11.92 11.92 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.17 1.6 5.98L0 24l6.24-1.63A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.18-3.48-8.52zM12 22c-1.89 0-3.73-.53-5.32-1.54l-.38-.24-3.7.96.99-3.58-.25-.4A9.93 9.93 0 0 1 2 12c0-5.52 4.48-10 10-10 2.67 0 5.18 1.04 7.07 2.93A9.93 9.93 0 0 1 22 12c0 5.52-4.48 10-10 10z" />
-        </svg>
-      </a>
-      {/* Email */}
-      <a
-        href="mailto:contato@senac.com"
-        className="text-blue-700 hover:text-red-500 transition"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
-          <path d="M12 13.065 2.4 6h19.2L12 13.065zM22 8.335V18H2V8.335l10 7.13 10-7.13z" />
-        </svg>
-      </a>
-    </div>
-  {/* o endereço e direitos autorais*/}
-  <div className=" pt-4">
-    <p className="text-sm text-gray-700">
-      Endereço: Avenida Principal, nº 123 — Açailândia/MA
-    </p>
-    <p className="text-sm text-gray-700">
-      Telefone: (99) 4002-8922 | E-mail: contato@senac.com
-    </p>
-    <p className="text-xs text-gray-500 mt-3">
-      © {new Date().getFullYear()} Filype Galvão e Gleica Melo — Todos os direitos reservados.
-    </p>
-  </div>
-</footer>
+          {/* WhatsApp */}
+          <a
+            href="https://wa.me/559992120154"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 hover:text-green-600 transition"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
+              <path d="M20.52 3.48A11.92 11.92 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.17 1.6 5.98L0 24l6.24-1.63A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.18-3.48-8.52zM12 22c-1.89 0-3.73-.53-5.32-1.54l-.38-.24-3.7.96.99-3.58-.25-.4A9.93 9.93 0 0 1 2 12c0-5.52 4.48-10 10-10 2.67 0 5.18 1.04 7.07 2.93A9.93 9.93 0 0 1 22 12c0 5.52-4.48 10-10 10z" />
+            </svg>
+          </a>
+
+          {/* Email */}
+          <a href="mailto:contato@senac.com" className="text-blue-700 hover:text-red-500 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
+              <path d="M12 13.065 2.4 6h19.2L12 13.065zM22 8.335V18H2V8.335l10 7.13 10-7.13z" />
+            </svg>
+          </a>
+        </div>
+
+        {/* Endereço e direitos autorais */}
+        <div className="pt-4">
+          <p className="text-sm text-gray-700">
+            Endereço: Avenida Contorno — Açailândia/MA
+          </p>
+          <p className="text-sm text-gray-700">
+            Telefone: (99) 4002-8922 | E-mail: contato@senac.com
+          </p>
+          <p className="text-xs text-gray-500 mt-3">
+            © {new Date().getFullYear()} Filype Galvão e Gleica Melo — Todos os direitos reservados.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
