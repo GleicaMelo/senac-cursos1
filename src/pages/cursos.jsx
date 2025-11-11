@@ -98,15 +98,19 @@ export default function Cursos() {
                 </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-500 block">
+                 <Link to="/privacidade" className="hover:text-orange-500 block">
                   Privacidade e Proteção de Dados
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-500 block">
-                  Ouvidoria
-                </a>
+                 <Link to="/ouvidoria" className="hover:text-orange-500 block">
+                Ouvidoria
+                </Link>
               </li>
+
+    
+              
+  
             </ul>
           </div>
 
