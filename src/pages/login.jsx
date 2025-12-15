@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { LogIn } from "lucide-react";
 
@@ -7,9 +7,18 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
 
+  useEffect(() => {
+    //aqui nós vamos travar o scroll da página
+    document.body.style.overflow = "hidden";
+
+    //  e aqui vamos liberar pra outras paginasscroll ao sair dessa tela
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
   const handleLogin = (e) => {
     e.preventDefault();
-    // Aqui você pode colocar a lógica de autenticação real depois
     console.log("Login:", email, senha);
   };
 
@@ -21,7 +30,9 @@ export default function Login() {
           <div className="bg-blue-600 text-white p-3 rounded-full mb-3">
             <LogIn size={28} />
           </div>
-          <h1 className="text-3xl font-bold text-blue-700">Bem-vindo ao Senac😉</h1>
+          <h1 className="text-3xl font-bold text-blue-700">
+            Bem-vindo ao Senac😉
+          </h1>
           <p className="text-gray-500 mt-2 text-sm">
             Por favor, acesse sua conta para continuar
           </p>
@@ -65,7 +76,7 @@ export default function Login() {
           </button>
         </form>
 
-        {/* Criar conta */}
+       
         <p className="text-gray-600 text-sm mt-6">
           Não tem uma conta?{" "}
           <button
