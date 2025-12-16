@@ -21,54 +21,74 @@ export default function Admin() {
   }
 
   return (
-    // ⬇️ NÃO usa h-screen / min-h-screen aqui
-    <main className="bg-gray-100 px-10 py-8 min-h-[calc(100vh-96px)]">
+    <main className="bg-blue-100 min-h-[calc(100vh-96px)] py-10">
       
-      <h1 className="text-3xl font-bold text-blue-700 mb-6">
-        Painel Admin - Cursos
-      </h1>
+      {/* CONTAINER CENTRAL */}
+      <div className="max-w-6xl mx-auto px-6">
+        
+        {/* TÍTULO CENTRALIZADO */}
+        <h1 className="text-4xl font-semibold text-gray-800 text-center mb-10">
+          Painel Admin — Cursos
+        </h1>
 
-      <CursoForm
-        salvarCurso={salvarCurso}
-        cursoEditando={cursoEditando}
-      />
+        {/* FORM CENTRALIZADO */}
+        <div className="bg-blue-100 rounded-lg p-6 mb-12 max-w-3xl mx-auto">
+          <CursoForm
+            salvarCurso={salvarCurso}
+            cursoEditando={cursoEditando}
+          />
+        </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
-        {cursos.map((curso) => (
-          <div
-            key={curso.id}
-            className="bg-white rounded-xl shadow p-4"
-          >
-            <img
-              src={curso.imagem}
-              alt={curso.nome}
-              className="h-40 w-full object-cover rounded-lg mb-3"
-            />
+        {/* LISTA DE CURSOS */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {cursos.map((curso) => (
+            <div
+              key={curso.id}
+              className="bg-white rounded-lg border border-gray-200 overflow-hidden"
+            >
+              <img
+                src={curso.imagem}
+                alt={curso.nome}
+                className="h-40 w-full object-cover"
+              />
 
-            <h2 className="font-bold text-lg">{curso.nome}</h2>
-            <p className="text-sm text-gray-600">{curso.descricao}</p>
+              <div className="p-4">
+                <h2 className="text-lg font-semibold text-gray-800">
+                  {curso.nome}
+                </h2>
 
-            <p className="text-sm mt-2">👨‍🏫 {curso.professor}</p>
-            <p className="text-sm">📅 {curso.data}</p>
-            <p className="text-sm">🗂️ {curso.categoria}</p>
+                <p className="text-sm text-gray-600 mt-1">
+                  {curso.descricao}
+                </p>
 
-            <div className="flex gap-4 mt-4">
-              <button
-                onClick={() => setCursoEditando(curso)}
-                className="text-blue-600 font-semibold hover:underline"
-              >
-                Editar
-              </button>
+                <div className="text-sm text-gray-500 mt-3 space-y-1">
+                  <p>👨‍🏫 {curso.professor}</p>
+                  <p>📅 {curso.data}</p>
+                  <p>🗂️ {curso.categoria}</p>
+                </div>
 
-              <button
-                onClick={() => excluirCurso(curso.id)}
-                className="text-red-600 font-semibold hover:underline"
-              >
-                Excluir
-              </button>
+                <div className="flex justify-end gap-3 mt-5">
+                  <button
+                    onClick={() => setCursoEditando(curso)}
+                    className="px-4 py-2 text-sm border border-blue-600
+                               text-blue-600 rounded-md hover:bg-blue-50 transition"
+                  >
+                    Editar
+                  </button>
+
+                  <button
+                    onClick={() => excluirCurso(curso.id)}
+                    className="px-4 py-2 text-sm border border-red-600
+                               text-red-600 rounded-md hover:bg-red-50 transition"
+                  >
+                    Excluir
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
       </div>
     </main>
   );
