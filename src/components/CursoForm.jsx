@@ -74,9 +74,30 @@ export default function CursoForm({ salvarCurso, cursoEditando }) {
         required
       >
         <option value="">Categoria</option>
-        <option>TI</option>
-        <option>Saúde</option>
         <option>Administração</option>
+        <option>Beleza</option>
+        <option>Comunicação</option>
+        <option>Comércio</option>
+        <option>Educação</option>
+        <option>Gastronômia</option>
+        <option>Gestão e Negócios</option>
+        <option>Idiomas</option>
+        <option>Moda</option>
+        <option>Saúde</option>
+        <option>TI</option>
+       
+      
+        
+       
+       
+      
+        
+       
+     
+
+
+
+
       </select>
 
       <input
