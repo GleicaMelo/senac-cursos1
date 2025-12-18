@@ -9,7 +9,7 @@ import Privacidade from "./pages/privacidade";
 import Ouvidoria from "./pages/ouvidoria";
 import Admin from "./pages/Admin";
 import AdminLogin from "./pages/AdminLogin";
-import AdminRoute from "./routes/AdminRoute";
+import AdminRoute from "./route/AdminRoute";
 
 import Navbar from "./components/Navbar";
 
