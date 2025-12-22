@@ -10,8 +10,8 @@
       "vagas_ocupadas": 5,
       "horas": 40,
       "preco": 199.90,
-      "imagem": "/src/assets/estetica.png",
-      "descricao": "Desenvolva habilidades em cuidados com a pele, maquiagem, depilação e estética facial e corporal. Aprenda técnicas modernas e seguras para atuar em clínicas, spas e salões de beleza, com foco no bem-estar e na autoestima dos clientes."
+      "imagem": "/images/estetica.png",
+      "descricao": "Desenvolva habilidades em cuidados com a pele, maquiagem, depilação e estética facial e corporal."
     },
     {
       "id": 2,
@@ -23,8 +23,8 @@
       "vagas_ocupadas": 14,
       "horas": 30,
       "preco": 179.90,
-      "imagem": "/src/assets/t.i.png",
-      "descricao": "Domine a criação de sites e sistemas web completos utilizando HTML, CSS, JavaScript, React e Node.js. Aprenda também sobre bancos de dados, hospedagem e boas práticas de programação para se destacar no mercado digital."
+      "imagem": "/images/t.i.png",
+      "descricao": "Domine a criação de sites e sistemas web completos."
     },
     {
       "id": 3,
@@ -36,8 +36,8 @@
       "vagas_ocupadas": 2,
       "horas": 35,
       "preco": 189.90,
-      "imagem": "/src/assets/logistica.png",
-      "descricao": "Entenda como funciona toda a cadeia de suprimentos — do armazenamento à distribuição. Aprenda a otimizar processos, reduzir custos e melhorar o fluxo de produtos em empresas de diferentes portes e segmentos."
+      "imagem": "/images/logistica.png",
+      "descricao": "Entenda como funciona toda a cadeia de suprimentos."
     },
     {
       "id": 4,
@@ -49,8 +49,8 @@
       "vagas_ocupadas": 2,
       "horas": 35,
       "preco": 189.90,
-      "imagem": "/src/assets/maquiagem.png",
-      "descricao": "Aperfeiçoe suas técnicas de maquiagem para diferentes estilos, tipos de pele e ocasiões. Aprenda sobre visagismo, harmonização de cores, preparação da pele e tendências do mercado da beleza para atuar como maquiador(a) profissional."
+      "imagem": "/images/maquiagem.png",
+      "descricao": "Aperfeiçoe suas técnicas de maquiagem."
     },
     {
       "id": 5,
@@ -62,8 +62,8 @@
       "vagas_ocupadas": 2,
       "horas": 35,
       "preco": 189.90,
-      "imagem": "/src/assets/costureiro.png",
-      "descricao": "Aprenda desde os fundamentos da costura até técnicas avançadas de modelagem e acabamento. Desenvolva peças com qualidade profissional e entenda como trabalhar com diferentes tecidos e máquinas de costura."
+      "imagem": "/images/costureiro.png",
+      "descricao": "Aprenda desde os fundamentos da costura."
     },
     {
       "id": 6,
@@ -75,11 +75,8 @@
       "vagas_ocupadas": 2,
       "horas": 35,
       "preco": 189.90,
-      "imagem": "/src/assets/farmacia.png",
-      "descricao": "Prepare-se para atuar no atendimento ao público em farmácias e drogarias. Aprenda sobre medicamentos, receituários, ética profissional e boas práticas de armazenamento e controle de estoque de produtos farmacêuticos."
+      "imagem": "/images/farmacia.png",
+      "descricao": "Prepare-se para atuar no atendimento em farmácias."
     }
-        
-  
-    
   ]
 }
