@@ -18,6 +18,7 @@ export default function Admin() {
     setCursos(cursos.filter((c) => c.id !== id));
   }
 
+  
   return (
     <main className="bg-blue-100 min-h-[calc(100vh-96px)] py-10">
       <div className="max-w-7xl mx-auto px-6">
