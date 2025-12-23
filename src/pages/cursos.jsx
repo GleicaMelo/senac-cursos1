@@ -26,11 +26,16 @@ export default function Cursos() {
 
   return (
     <div className="min-h-screen bg-blue-100 flex flex-col justify-between">
+      <div className="absolute inset-0 overflow-hidden">
+                <div className="absolute -top-40 -right-40 w-80 h-80 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
+                <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse" style={{ animationDelay: '2s' }}></div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse" style={{ animationDelay: '4s' }}></div>
+            </div>
       <main className="flex-grow p-6 md:p-10">
         {/* 🧭 Cabeçalho */}
         <header className="text-center mb-10">
           <h1 className="text-3xl md:text-4xl font-extrabold text-blue-700 drop-shadow-sm">
-            Cursos 1
+            Cursos
           </h1>
           <p className="text-gray-600 mt-2">
             Explore nossos cursos e invista no seu futuro profissional
