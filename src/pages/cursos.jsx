@@ -25,61 +25,65 @@ export default function Cursos() {
   const categoriasUnicas = ["Todos", ...new Set(cursos.map((c) => c.categoria))];
 
   return (
-    <div className="min-h-screen bg-blue-100 flex flex-col justify-between">
-      <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute -top-40 -right-40 w-80 h-80 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-                <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse" style={{ animationDelay: '2s' }}></div>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse" style={{ animationDelay: '4s' }}></div>
-            </div>
-      <main className="flex-grow p-6 md:p-10">
-        {/* 🧭 Cabeçalho */}
-        <header className="text-center mb-10">
-          <h1 className="text-3xl md:text-4xl font-extrabold text-blue-700 drop-shadow-sm">
-            Cursos
-          </h1>
-          <p className="text-gray-600 mt-2">
-            Explore nossos cursos e invista no seu futuro profissional
-          </p>
-        </header>
+    <>
 
-        {/* 🔎 Barra de busca e filtro */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-10">
-          <input
-            type="text"
-            placeholder="Pesquisar curso..."
-            value={busca}
-            onChange={(e) => setBusca(e.target.value)}
-            className="bg-white border border-gray-300 p-3 rounded-xl w-full md:w-1/2 shadow-sm focus:ring-2 focus:ring-blue-500 outline-none transition"
-          />
-
-          <select
-            value={categoria}
-            onChange={(e) => setCategoria(e.target.value)}
-            className="bg-white border border-gray-300 p-3 rounded-xl shadow-sm focus:ring-2 focus:ring-blue-500 outline-none transition w-full md:w-1/4"
-          >
-            {categoriasUnicas.map((cat) => (
-              <option key={cat} value={cat}>
-                {cat}
-              </option>
-            ))}
-          </select>
+      <div className="h-full bg-gradient-to-br from-blue-200 via-orange-200 to-blue-200 p-4 relative overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
+          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse" style={{ animationDelay: '4s' }}></div>
         </div>
+        <main className="flex-grow p-6 md:p-10">
+          {/* 🧭 Cabeçalho */}
+          <header className="text-center mb-10">
+            <h1 className="text-3xl md:text-4xl font-extrabold text-blue-700 drop-shadow-sm">
+              Cursos
+            </h1>
+            <p className="text-gray-600 mt-2">
+              Explore nossos cursos e invista no seu futuro profissional
+            </p>
+          </header>
 
-        {/* 🧱 Grade de cursos */}
-        {filtrados.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {filtrados.map((curso) => (
-              <CursoCard key={curso.id} curso={curso} />
-            ))}
+          {/* 🔎 Barra de busca e filtro */}
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-10">
+            <input
+              type="text"
+              placeholder="Pesquisar curso..."
+              value={busca}
+              onChange={(e) => setBusca(e.target.value)}
+              className="bg-white border border-gray-300 p-3 rounded-xl w-full md:w-1/2 shadow-sm focus:ring-2 focus:ring-blue-500 outline-none transition"
+            />
+
+            <select
+              value={categoria}
+              onChange={(e) => setCategoria(e.target.value)}
+              className="bg-white border border-gray-300 p-3 rounded-xl shadow-sm focus:ring-2 focus:ring-blue-500 outline-none transition w-full md:w-1/4"
+            >
+              {categoriasUnicas.map((cat) => (
+                <option key={cat} value={cat}>
+                  {cat}
+                </option>
+              ))}
+            </select>
           </div>
-        ) : (
-          <p className="text-center text-gray-600 mt-16 text-lg">
-            Nenhum curso encontrado 😕
-          </p>
-        )}
-      </main>
 
-      {/* 🦶 Rodapé */}
+          {/* 🧱 Grade de cursos */}
+          {filtrados.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {filtrados.map((curso) => (
+                <CursoCard key={curso.id} curso={curso} />
+              ))}
+            </div>
+          ) : (
+            <p className="text-center text-gray-600 mt-16 text-lg">
+              Nenhum curso encontrado 😕
+            </p>
+          )}
+        </main>
+
+        {/* 🦶 Rodapé */}
+
+      </div>
       <footer className="bg-white w-full py-10 px-4 text-center shadow-inner border-t border-blue-400">
         {/* Nome e Ícones centralizados */}
         <div className="flex flex-col items-center mb-8">
@@ -103,19 +107,19 @@ export default function Cursos() {
                 </Link>
               </li>
               <li>
-                 <Link to="/privacidade" className="hover:text-orange-500 block">
+                <Link to="/privacidade" className="hover:text-orange-500 block">
                   Privacidade e Proteção de Dados
                 </Link>
               </li>
               <li>
-                 <Link to="/ouvidoria" className="hover:text-orange-500 block">
-                Ouvidoria
+                <Link to="/ouvidoria" className="hover:text-orange-500 block">
+                  Ouvidoria
                 </Link>
               </li>
 
-    
-              
-  
+
+
+
             </ul>
           </div>
 
@@ -228,6 +232,8 @@ export default function Cursos() {
           </p>
         </div>
       </footer>
-    </div>
+    </>
+
+
   );
 }

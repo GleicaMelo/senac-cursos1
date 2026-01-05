@@ -11,7 +11,7 @@ export default function Navbar() {
     location.pathname === "/admin-login";
 
   return (
-    <nav className="bg-gradient-to-br from-blue-200 via-orange-200 to-blue-200 backdrop-blur-xl">
+    <nav className="bg-gradient-to-br from-blue-500 via-blue-500 to-blue-500 backdrop-blur-xl">
       {/* Elementos decorativos de fundo */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>

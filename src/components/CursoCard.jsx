@@ -67,7 +67,7 @@ export default function CursoCard({ curso }) {
         {/* Tags de modalidade e carga horária */}
         <div className="flex flex-wrap gap-2 mt-4">
           {curso.modalidade && (
-            <span className="flex items-center gap-1.5 px-3 py-1.5 text-xs rounded-lg bg-gray-500 text-white border border-purple-500/30 backdrop-blur-sm">
+            <span className="flex items-center gap-1.5 px-3 py-1.5 text-xs rounded-lg bg-blue-100 text-white border border-purple-500/30 backdrop-blur-sm">
               <BookOpen className="w-3.5 h-3.5" />
               {curso.modalidade}
             </span>
@@ -150,7 +150,7 @@ export default function CursoCard({ curso }) {
         </div>
 
         {/* Divisor */}
-        <div className="my-4 border-t border-white/50"></div>
+        <div className="my-4 border-t border-white/5"></div>
 
         {/* Preço e Botão */}
         <div className="mt-auto">
@@ -181,3 +181,4 @@ export default function CursoCard({ curso }) {
     </div>
   );
 }
+
