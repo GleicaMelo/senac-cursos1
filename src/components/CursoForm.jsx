@@ -85,19 +85,6 @@ export default function CursoForm({ salvarCurso, cursoEditando }) {
         <option>Moda</option>
         <option>Saúde</option>
         <option>TI</option>
-       
-      
-        
-       
-       
-      
-        
-       
-     
-
-
-
-
       </select>
 
       <input

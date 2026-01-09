@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Eye, EyeOff, Lock, Mail, BookOpen, ArrowRight } from 'lucide-react';
 
 export default function StudentLogin() {
@@ -18,6 +18,14 @@ export default function StudentLogin() {
       alert('Login realizado com sucesso!');
     }, 1500);
   };
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+  })
+
+  return () => {
+    
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-100 via-orange-100 to-blue-100 flex items-center justify-center p-4 relative overflow-hidden">
