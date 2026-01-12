@@ -7,29 +7,31 @@ import OndeEstamos from "./pages/OndeEstamos";
 import Login from "./pages/login";
 import Privacidade from "./pages/privacidade";
 import Ouvidoria from "./pages/ouvidoria";
+
 import Admin from "./pages/Admin";
 import AdminLogin from "./pages/AdminLogin";
-import AdminRoute from "./route/AdminRoute";
+import AdminRoute from "./routes/AdminRoute";
 
 import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
     <Router>
-      {/*aqui a nossa navbar global */}
       <Navbar />
 
       <Routes>
+        {/* SITE PÚBLICO */}
         <Route path="/" element={<Cursos />} />
         <Route path="/cadastro/:id" element={<Cadastro />} />
-        <Route path="/QuemSomos" element={<QuemSomos />} />
-        <Route path="/OndeEstamos" element={<OndeEstamos />} />
+        <Route path="/quemsomos" element={<QuemSomos />} />
+        <Route path="/ondeestamos" element={<OndeEstamos />} />
         <Route path="/login" element={<Login />} />
         <Route path="/privacidade" element={<Privacidade />} />
         <Route path="/ouvidoria" element={<Ouvidoria />} />
 
         {/* ADMIN */}
         <Route path="/admin-login" element={<AdminLogin />} />
+
         <Route
           path="/admin"
           element={
