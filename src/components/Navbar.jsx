@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-blue-500 p-4 flex justify-between items-center">
-      {/* LOGO — NÃO MEXI */}
+      {/* LOGO*/}
       <Link to="/">
         <img
           src="/images/senac-logo2.png"
@@ -17,7 +17,7 @@ export default function Navbar() {
         />
       </Link>
 
-      {/* BOTÕES — COM ESTILO DO SEGUNDO CÓDIGO */}
+      {/* BOTÕES*/}
       {!isAdminArea && (
         <div className="flex gap-3">
 
