@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <nav className="bg-blue-500 p-4 flex justify-between items-center">
       <Link to="/">
-        <img src="/senac-logo.png" alt="Senac" className="h-10" />
+        <img src="/images/senac-logo2.png" alt="Senac" className="h-10" />
       </Link>
 
       {!isAdminArea && (

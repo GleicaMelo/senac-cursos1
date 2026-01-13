@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function PreMatricula() {
   const [etapa, setEtapa] = useState(1);
-  
+  /* zod zodResolvers tansteck form */
   // Dados pessoais
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
