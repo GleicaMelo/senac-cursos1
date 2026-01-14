@@ -28,7 +28,7 @@ export default function AdminLogin() {
       if (username === "admin" && password === "123456") {
         localStorage.setItem("adminAuth", "true");
         setIsLoading(false);
-        navigate("/admin"); // entra direto no painel
+        navigate("/admin"); 
       } else {
         setIsLoading(false);
         alert("Usuário ou senha inválidos");
