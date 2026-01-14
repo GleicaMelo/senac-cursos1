@@ -21,7 +21,7 @@ export default function Navbar() {
       {!isAdminArea && (
         <div className="flex gap-3">
 
-          {/* ADMIN */}
+          {/* BOTÂO do ADMIN */}
           <Link to="/admin-login">
             <button className="group relative flex items-center gap-2 px-6 py-2.5 rounded-xl 
             bg-orange-400 text-white font-semibold 
