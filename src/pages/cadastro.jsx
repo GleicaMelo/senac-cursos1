@@ -148,7 +148,7 @@ Obrigado!
         {/* Formulário */}
         <div className="bg-white rounded-2xl shadow-xl p-8">
           
-          {/* ETAPA 1 - Dados Pessoais */}
+          {/* ETAPA 1 - Dados Pessoais dos alunos e tals */}
           {etapa === 1 && (
             <div className="space-y-6">
               <div className="border-b-4 border-blue-300 pb-4">
