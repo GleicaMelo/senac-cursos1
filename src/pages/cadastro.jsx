@@ -172,7 +172,7 @@ Obrigado!
               </div>
 
               <div className="grid md:grid-cols-2 gap-4">
-                <div>
+                <div> 
                   <label className="block text-sm font-medium text-gray-700 mb-1">
                     E-mail <span className="text-red-500">*</span>
                   </label>
