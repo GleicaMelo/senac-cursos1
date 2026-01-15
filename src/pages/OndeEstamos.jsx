@@ -1,7 +1,7 @@
 export default function OndeEstamos() {
   return (
-    <div className="min-h-screen bg-blue-100 flex items-center justify-center">
-      <div className="max-w-4xl mx-auto py-16 px-4 text-center bg-blue-100 rounded-2xl ">
+    <div className="min-h-screen bg-gradient-to-br from-blue-200 via-orange-200 to-blue-200 p-4 relative overflow-hidden">
+      <div className="max-w-4xl mx-auto py-16 px-4 text-center bg-blue-100 rounded-4xl ">
         <h1 className="text-3xl font-bold text-blue-700 mb-6">Onde Estamos</h1>
         <p className="text-gray-700 leading-relaxed">
           Estamos localizados no <strong>Senac Açailândia – Maranhão</strong>,

@@ -23,7 +23,7 @@ export default function AdminLogin() {
     e.preventDefault();
     setIsLoading(true);
 
-    // LOGIN FAKE
+    // login fake
     setTimeout(() => {
       if (username === "admin" && password === "123456") {
         localStorage.setItem("adminAuth", "true");
