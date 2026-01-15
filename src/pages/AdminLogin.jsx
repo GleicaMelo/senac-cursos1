@@ -39,10 +39,19 @@ export default function AdminLogin() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-100 via-orange-100 to-blue-100 flex items-center justify-center p-4 relative overflow-hidden">
 
-      {/* BOTÃO VOLTAR */}
+      {/* BOTÃO VOLTAR supeiror direito */}
       <button
         onClick={() => navigate("/")}
-        className="absolute top-6 left-6 flex items-center gap-2 text-blue-800 font-bold hover:text-orange-600 z-20"
+        className="absolute top-6 left-6 z-20 
+                   flex items-center gap-2 
+                   px-4 py-2 rounded-xl
+                   bg-orange-500/70 backdrop-blur-md
+                   border border-blue-200
+                   text-white font-semibold
+                   shadow-lg hover:shadow-orange-400/40
+                   hover:text-blue-800
+                   transition-all duration-300
+                   hover:scale-105 active:scale-95"
       >
         <ArrowLeft size={18} />
         Voltar para o início
