@@ -3,10 +3,12 @@ import { LogIn, ShieldCheck } from "lucide-react";
 
 export default function Navbar() {
   const location = useLocation();
-
+  {/*Aqui pra escolher quais pages nós tiraremos o navbar*/ }
   const hideNavbar =
     location.pathname === "/admin-login" ||
-    
+    location.pathname === "/login" ||
+
+
     location.pathname.startsWith("/admin");
 
   // aQui é pra n renderizar o navbar nas rotas q eu quero
